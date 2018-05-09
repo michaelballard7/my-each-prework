@@ -3,9 +3,9 @@ def my_each(array)
   while i < array.length 
    yeild array[i] if block_given?
     i +=1
+    end
   end
   array
-end
 end
 
 my_each(array) do |word|
