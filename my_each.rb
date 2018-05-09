@@ -1,11 +1,10 @@
 def my_each(array)
   i = 0 
   while i < array.length 
-   yeild array[i] if block_given?
+   yield array[i] if block_given?
     i +=1
     end
   array
-end
 end
 
 my_each(array) do |word|
